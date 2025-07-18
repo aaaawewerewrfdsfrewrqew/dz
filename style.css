@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  background-color: #2b2f38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 2px;
+  position: relative;
+}
+
+.item span {
+  width: 30px;
+  height: 30px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.item span::after {
+  content: attr(data-number);
+  transform: rotate(-45deg);
+  display: block;
+  font-size: 14px;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+
+.item1 {
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 2;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+.item2 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+  background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+}
+.item3 {
+  grid-column: 5 / span 2;
+  grid-row: 1;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+}
+.item4 {
+  grid-column: 5 / span 2;
+  grid-row: 2;
+  background: linear-gradient(135deg, #66a6ff 0%, #89f7fe 100%);
+}
+.item5 {
+  grid-column: 1;
+  grid-row: 1;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item6 {
+  grid-column: 1;
+  grid-row: 2;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item7 {
+  grid-column: 1;
+  grid-row: 3;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item8 {
+  grid-column: 1;
+  grid-row: 4;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item9 {
+  grid-column: 2;
+  grid-row: 3;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item10 {
+  grid-column: 2;
+  grid-row: 4;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item11 {
+  grid-column: 5;
+  grid-row: 3;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item12 {
+  grid-column: 6;
+  grid-row: 3;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item13 {
+  grid-column: 5;
+  grid-row: 4;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.item14 {
+  grid-column: 6;
+  grid-row: 4;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
